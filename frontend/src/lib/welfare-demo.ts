@@ -1,4 +1,5 @@
 export type Profile = { name: string; state: string; category: string; age: string; income: string };
+export const emptyProfile: Profile = { name: "", state: "", category: "", age: "", income: "" };
 export const sampleProfile: Profile = { name: "Ram Kumar", state: "Uttar Pradesh", category: "OBC / Farmer", age: "42", income: "250000" };
 export function maskAadhaar(value: string) {
   const digits = value.replace(/\D/g, "");
